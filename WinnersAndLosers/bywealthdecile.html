@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Distributional" href="../Distributional/index.html" /><link rel="prev" title="Overall" href="overall.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="by Income Decile" href="byincomedecile.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
-        <title>By program - PolicyEngine</title>
+        <title>by Wealth Decile - PolicyEngine</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
@@ -227,9 +227,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Budgetary Impact</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Budgetary Impact</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="overall.html">Overall</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">By program</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Budgetary/index.html">Budgetary Impact</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Budgetary Impact</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Budgetary/overall.html">Overall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Budgetary/byprogram.html">By program</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Distributional/index.html">Distributional</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Distributional</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -245,9 +245,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../WinnersAndLosers/index.html">Winners and Losers</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Winners and Losers</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../WinnersAndLosers/byincomedecile.html">by Income Decile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../WinnersAndLosers/bywealthdecile.html">by Wealth Decile</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Winners and Losers</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Winners and Losers</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="byincomedecile.html">by Income Decile</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">by Wealth Decile</a></li>
 </ul>
 </li>
 </ul>
@@ -270,7 +270,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/Budgetary/byprogram.md" title="View this page">
+  <a class="muted-link" href="../_sources/WinnersAndLosers/bywealthdecile.md" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -290,36 +290,34 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section class="tex2jax_ignore mathjax_ignore" id="by-program">
-<h1>By program<a class="headerlink" href="#by-program" title="Link to this heading">¶</a></h1>
+          <section class="tex2jax_ignore mathjax_ignore" id="by-wealth-decile">
+<h1>by Wealth Decile<a class="headerlink" href="#by-wealth-decile" title="Link to this heading">¶</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
-<p>The Budgetary Impact by Program metrics provide detailed insights into how a policy reform affects various government revenue and expenditure programs. These metrics are part of the <code class="docutils literal notranslate"><span class="pre">EconomicImpact</span></code> class and can be calculated for different tax and benefit programs.</p>
+<p>The winners and losers by wealth decile metrics provide insights into how a policy reform impacts different segments of the population based on their wealth. These metrics help understand the distributional effects of policy changes across various wealth deciles.</p>
 </section>
 <section id="available-metrics">
 <h2>Available Metrics<a class="headerlink" href="#available-metrics" title="Link to this heading">¶</a></h2>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/income_tax</span></code>: Income Tax revenue</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/national_insurance</span></code>: National Insurance contributions</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/vat</span></code>: Value Added Tax (VAT) revenue</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/council_tax</span></code>: Council Tax revenue</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/fuel_duty</span></code>: Fuel Duty revenue</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/tax_credits</span></code>: Tax Credits expenditure</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/universal_credits</span></code>: Universal Credit expenditure</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/child_benefits</span></code>: Child Benefits expenditure</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/state_pension</span></code>: State Pension expenditure</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/by_program/pension_credit</span></code>: Pension Credit expenditure</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">winners_and_losers/by_wealth_decile</span></code>: Calculates the proportion of people in each wealth decile who experience a gain or loss of income due to the reform, categorized into different ranges of percentage change.</p></li>
 </ol>
 </section>
 <section id="metric-structure">
 <h2>Metric Structure<a class="headerlink" href="#metric-structure" title="Link to this heading">¶</a></h2>
-<p>Each metric returns a dictionary with the following keys:</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">winners_and_losers/by_wealth_decile</span></code> metric returns a dictionary with the following keys:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">baseline</span></code>: The amount before the reform (in GBP).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">reform</span></code>: The amount after the reform (in GBP).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">change</span></code>: The percentage change due to the reform.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">deciles</span></code>: A dictionary where each key represents a wealth decile, and the value is a list showing the proportion of people in that decile who fall into different categories based on their income change:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Lose</span> <span class="pre">more</span> <span class="pre">than</span> <span class="pre">5%</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Lose</span> <span class="pre">less</span> <span class="pre">than</span> <span class="pre">5%</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">change</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Gain</span> <span class="pre">less</span> <span class="pre">than</span> <span class="pre">5%</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Gain</span> <span class="pre">more</span> <span class="pre">than</span> <span class="pre">5%</span></code></p></li>
 </ul>
-<p>All values are rounded to 2 decimal places for the baseline and reform, and to 1 decimal place for the change.</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">all</span></code>: A dictionary showing the overall proportion of people across all wealth deciles who fall into each income change category.</p></li>
+</ul>
+<p>All proportions are expressed as percentages and rounded to 1 decimal place.</p>
 </section>
 <section id="example-usage">
 <h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
@@ -332,45 +330,34 @@
   <span class="p">}</span>
 <span class="p">},</span> <span class="n">country</span><span class="o">=</span><span class="s2">&quot;uk&quot;</span><span class="p">)</span>
 
-<span class="c1"># Calculate budgetary impact for each program</span>
-<span class="n">income_tax</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/income_tax&quot;</span><span class="p">)</span>
-<span class="n">national_insurance</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/national_insurance&quot;</span><span class="p">)</span>
-<span class="n">vat</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/vat&quot;</span><span class="p">)</span>
-<span class="n">council_tax</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/council_tax&quot;</span><span class="p">)</span>
-<span class="n">fuel_duty</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/fuel_duty&quot;</span><span class="p">)</span>
-<span class="n">tax_credits</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/tax_credits&quot;</span><span class="p">)</span>
-<span class="n">universal_credits</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/universal_credits&quot;</span><span class="p">)</span>
-<span class="n">child_benefits</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/child_benefits&quot;</span><span class="p">)</span>
-<span class="n">state_pension</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/state_pension&quot;</span><span class="p">)</span>
-<span class="n">pension_credit</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/by_program/pension_credit&quot;</span><span class="p">)</span>
+<span class="c1"># Calculate winners and losers by wealth decile</span>
+<span class="n">by_wealth_decile</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;winners_and_losers/by_wealth_decile&quot;</span><span class="p">)</span>
 
 <span class="c1"># Print the results</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Income Tax: </span><span class="si">{</span><span class="n">income_tax</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;National Insurance: </span><span class="si">{</span><span class="n">national_insurance</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VAT: </span><span class="si">{</span><span class="n">vat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Council Tax: </span><span class="si">{</span><span class="n">council_tax</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuel Duty: </span><span class="si">{</span><span class="n">fuel_duty</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tax Credits: </span><span class="si">{</span><span class="n">tax_credits</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Universal Credit: </span><span class="si">{</span><span class="n">universal_credits</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Child Benefits: </span><span class="si">{</span><span class="n">child_benefits</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;State Pension: </span><span class="si">{</span><span class="n">state_pension</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pension Credit: </span><span class="si">{</span><span class="n">pension_credit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;By wealth decile: </span><span class="si">{</span><span class="n">by_wealth_decile</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Income</span> <span class="n">Tax</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="mf">291090070166.62</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="mf">496242053771.2</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="mf">70.5</span><span class="p">}</span>
-<span class="n">National</span> <span class="n">Insurance</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="mf">50826792606.89</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="mf">50826792606.89</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">}</span>
-<span class="n">VAT</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="mf">175581776889.21</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="mf">175581776889.21</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">}</span>
-<span class="n">Council</span> <span class="n">Tax</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="mf">47861314826.79</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="mf">47861314826.79</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">}</span>
-<span class="n">Fuel</span> <span class="n">Duty</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="mf">28019829809.09</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="mf">28019829809.09</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">}</span>
-<span class="n">Tax</span> <span class="n">Credits</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">208150256.01</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">308166663.98</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="mf">48.1</span><span class="p">}</span>
-<span class="n">Universal</span> <span class="n">Credit</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">72209672284.1</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">73780445681.08</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="mf">2.2</span><span class="p">}</span>
-<span class="n">Child</span> <span class="n">Benefits</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">15975002346.41</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">15975002346.41</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.0</span><span class="p">}</span>
-<span class="n">State</span> <span class="n">Pension</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">127240166697.26</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">127240166697.26</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.0</span><span class="p">}</span>
-<span class="n">Pension</span> <span class="n">Credit</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">2000983943.05</span><span class="p">,</span> <span class="s1">&#39;reform&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">2181135212.4</span><span class="p">,</span> <span class="s1">&#39;change&#39;</span><span class="p">:</span> <span class="mf">9.0</span><span class="p">}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;deciles&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;Lose more than 5%&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">21.0</span><span class="p">,</span> <span class="mf">31.4</span><span class="p">,</span> <span class="mf">58.9</span><span class="p">,</span> <span class="mf">64.5</span><span class="p">,</span> <span class="mf">68.7</span><span class="p">,</span> <span class="mf">79.3</span><span class="p">,</span> <span class="mf">81.1</span><span class="p">,</span> <span class="mf">82.6</span><span class="p">,</span> <span class="mf">84.5</span><span class="p">,</span> <span class="mf">86.4</span><span class="p">],</span>
+            <span class="s2">&quot;Lose less than 5%&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">6.6</span><span class="p">,</span> <span class="mf">9.9</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">1.9</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">2.6</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">],</span>
+            <span class="s2">&quot;No change&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">72.3</span><span class="p">,</span> <span class="mf">58.6</span><span class="p">,</span> <span class="mf">38.8</span><span class="p">,</span> <span class="mf">33.6</span><span class="p">,</span> <span class="mf">27.9</span><span class="p">,</span> <span class="mf">18.7</span><span class="p">,</span> <span class="mf">18.4</span><span class="p">,</span> <span class="mf">14.8</span><span class="p">,</span> <span class="mf">15.3</span><span class="p">,</span> <span class="mf">13.0</span><span class="p">],</span>
+            <span class="s2">&quot;Gain less than 5%&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">],</span>
+            <span class="s2">&quot;Gain more than 5%&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;all&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;Lose more than 5%&quot;</span><span class="p">:</span> <span class="mf">65.8</span><span class="p">,</span>
+            <span class="s2">&quot;Lose less than 5%&quot;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
+            <span class="s2">&quot;No change&quot;</span><span class="p">:</span> <span class="mf">31.1</span><span class="p">,</span>
+            <span class="s2">&quot;Gain less than 5%&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+            <span class="s2">&quot;Gain more than 5%&quot;</span><span class="p">:</span> <span class="mf">0.0</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -378,15 +365,10 @@
 <h2>Interpretation<a class="headerlink" href="#interpretation" title="Link to this heading">¶</a></h2>
 <p>In this example:</p>
 <ul class="simple">
-<li><p>Income Tax revenue increases significantly by 70.5%, from £291.1 billion to £496.2 billion.</p></li>
-<li><p>National Insurance, VAT, Council Tax, and Fuel Duty revenues remain unchanged.</p></li>
-<li><p>Tax Credits expenditure increases by 48.1%, from £208.2 million to £308.2 million.</p></li>
-<li><p>Universal Credit expenditure increases slightly by 2.2%, from £72.2 billion to £73.8 billion.</p></li>
-<li><p>Child Benefits and State Pension expenditures remain unchanged.</p></li>
-<li><p>Pension Credit expenditure increases by 9.0%, from £2.0 billion to £2.2 billion.</p></li>
+<li><p>The proportion of people in the lowest wealth decile who lose more than 5% of their income is 21.0%, while those who gain more than 5% is 0.0%.</p></li>
+<li><p>The proportion of people in the highest wealth decile who lose more than 5% is 86.4%, with no gain more than 5%.</p></li>
+<li><p>Overall, 65.8% of the population experiences a loss of more than 5% in income, with no significant gains.</p></li>
 </ul>
-<p>These metrics provide a comprehensive view of how the reform affects various government revenue streams and expenditure programs. They can help policymakers understand the fiscal implications of proposed reforms across different sectors of the budget.
-Note: Negative values for benefits (e.g., Tax Credits, Universal Credit) indicate government expenditure.</p>
 </section>
 </section>
 
@@ -403,7 +385,7 @@ Note: Negative values for benefits (e.g., Tax Credits, Universal Credit) indicat
         },
         kernelOptions: {
             name: "python3",
-            path: "./Budgetary"
+            path: "./WinnersAndLosers"
         },
         predefinedOutput: true
     }
@@ -414,23 +396,15 @@ Note: Negative values for benefits (e.g., Tax Credits, Universal Credit) indicat
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../Distributional/index.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Distributional</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="overall.html">
+          
+          <a class="prev-page" href="byincomedecile.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Overall</div>
+                <div class="title">by Income Decile</div>
                 
               </div>
             </a>
@@ -464,7 +438,7 @@ Note: Negative values for benefits (e.g., Tax Credits, Universal Credit) indicat
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">By program</a><ul>
+<li><a class="reference internal" href="#">by Wealth Decile</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#available-metrics">Available Metrics</a></li>
 <li><a class="reference internal" href="#metric-structure">Metric Structure</a></li>
